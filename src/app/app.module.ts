@@ -11,12 +11,11 @@ import { EventService } from './demo/service/event.service';
 import { IconService } from './demo/service/icon.service';
 import { NodeService } from './demo/service/node.service';
 import { PhotoService } from './demo/service/photo.service';
-import { ScoringCardComponent } from './components/scoring-card/scoring-card.component';
-import { LandingPageComponent } from './components/scoring-card/landing page/landing-page/landing-page.component';
+import { ScoreCardComponent } from './components/score-card/score-card/score-card.component';
 
 @NgModule({
     declarations: [
-        AppComponent, NotfoundComponent, ScoringCardComponent, LandingPageComponent
+        AppComponent, NotfoundComponent, ScoreCardComponent
     ],
     imports: [
         AppRoutingModule,

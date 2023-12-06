@@ -2,8 +2,8 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { NotfoundComponent } from './demo/components/notfound/notfound.component';
 import { AppLayoutComponent } from "./layout/app.layout.component";
-import { ScoringCardComponent } from './components/scoring-card/scoring-card.component';
-import { LandingPageComponent } from './components/scoring-card/landing page/landing-page/landing-page.component';
+import { LandingPageComponent } from './components/landing page/landing-page/landing-page.component';
+import { ScoreCardComponent } from './components/score-card/score-card/score-card.component';
 
 @NgModule({
     imports: [
@@ -12,8 +12,8 @@ import { LandingPageComponent } from './components/scoring-card/landing page/lan
                 path: '', component: AppLayoutComponent,
                 children: [
                     // { path: '', loadChildren: () => import('./demo/components/dashboard/dashboard.module').then(m => m.DashboardModule) },
-                    { path: '', component: ScoringCardComponent, pathMatch: 'full' },
-                    { path: 'scoring-card', component: ScoringCardComponent, pathMatch: 'full' },
+                    { path: '', component: ScoreCardComponent, pathMatch: 'full' },
+                    { path: 'scoring-card', component: ScoreCardComponent, pathMatch: 'full' },
                     // { path: 'uikit', loadChildren: () => import('./demo/components/uikit/uikit.module').then(m => m.UIkitModule) },
                     // { path: 'utilities', loadChildren: () => import('./demo/components/utilities/utilities.module').then(m => m.UtilitiesModule) },
                     // { path: 'documentation', loadChildren: () => import('./demo/components/documentation/documentation.module').then(m => m.DocumentationModule) },
